@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>patinhas &#x1F49A;</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursor"></div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3C9 3 6 5 6 8.5C6 10 6.5 11 7 12L12 20L17 12C17.5 11 18 10 18 8.5C18 5 15 3 12 3Z" fill="#C9D85B" stroke="#b0bf3e" stroke-width="1"/>
+        <circle cx="9" cy="7" r="1.5" fill="white" opacity="0.6"/>
+      </svg>
+      pati<span>nhas</span>
+    </a>
+
+    <div class="bone-menu">
+      <a href="#">Home</a>
+      <a href="#animais">Animais</a>
+      <a href="#ajudar">Como ajudar</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </div>
+
+    <button class="btn-adopt" onclick="document.getElementById('animais').scrollIntoView({behavior:'smooth'})">Adote agora 🐾</button>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+
+  <!-- Background paws -->
+  <div class="hero-bg-paws">
+    <!-- paw 1 -->
+    <svg class="paw-svg" style="top:12%;left:5%;width:80px;transform:rotate(-20deg)" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="52" rx="18" ry="14" fill="#1a1a18"/>
+      <ellipse cx="22" cy="34" rx="8" ry="10" fill="#1a1a18"/>
+      <ellipse cx="40" cy="28" rx="9" ry="11" fill="#1a1a18"/>
+      <ellipse cx="58" cy="34" rx="8" ry="10" fill="#1a1a18"/>
+    </svg>
+    <!-- paw 2 -->
+    <svg class="paw-svg" style="top:30%;right:4%;width:60px;transform:rotate(15deg)" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="52" rx="18" ry="14" fill="#C9D85B"/>
+      <ellipse cx="22" cy="34" rx="8" ry="10" fill="#C9D85B"/>
+      <ellipse cx="40" cy="28" rx="9" ry="11" fill="#C9D85B"/>
+      <ellipse cx="58" cy="34" rx="8" ry="10" fill="#C9D85B"/>
+    </svg>
+    <!-- paw 3 -->
+    <svg class="paw-svg" style="bottom:20%;left:10%;width:50px;transform:rotate(30deg)" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="52" rx="18" ry="14" fill="#b8b4e8"/>
+      <ellipse cx="22" cy="34" rx="8" ry="10" fill="#b8b4e8"/>
+      <ellipse cx="40" cy="28" rx="9" ry="11" fill="#b8b4e8"/>
+      <ellipse cx="58" cy="34" rx="8" ry="10" fill="#b8b4e8"/>
+    </svg>
+    <!-- paw 4 -->
+    <svg class="paw-svg" style="bottom:10%;right:12%;width:70px;transform:rotate(-10deg)" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="52" rx="18" ry="14" fill="#1a1a18"/>
+      <ellipse cx="22" cy="34" rx="8" ry="10" fill="#1a1a18"/>
+      <ellipse cx="40" cy="28" rx="9" ry="11" fill="#1a1a18"/>
+      <ellipse cx="58" cy="34" rx="8" ry="10" fill="#1a1a18"/>
+    </svg>
+    <!-- paw 5 -->
+    <svg class="paw-svg" style="top:60%;left:50%;width:40px;transform:rotate(45deg)" viewBox="0 0 80 80" fill="none">
+      <ellipse cx="40" cy="52" rx="18" ry="14" fill="#C9D85B"/>
+      <ellipse cx="22" cy="34" rx="8" ry="10" fill="#C9D85B"/>
+      <ellipse cx="40" cy="28" rx="9" ry="11" fill="#C9D85B"/>
+      <ellipse cx="58" cy="34" rx="8" ry="10" fill="#C9D85B"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text reveal">
+      <div class="section-tag">🐾 Adoção responsável</div>
+      <h1>Encontre um novo <em>melhor amigo</em></h1>
+      <p>Conectamos animais resgatados a lares cheios de amor. Cada adoção é uma história que merece começar com cuidado.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" type="button" id="openAdoptionInterest">Quero adotar</button>
+        <button class="btn-secondary" type="button" data-open-donation>Fazer doação ♡</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2.4k</span>
+          <span class="stat-label">Adotados</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">340</span>
+          <span class="stat-label">Disponíveis</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Felizes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="hero-main-img">
+        <img src="/assets/img/hero.png" alt="Cachorro em destaque na campanha Patinhas">
+      </div>
+
+      <!-- Floating bubbles -->
+      <div class="pet-bubble">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+          <!-- mini cat -->
+          <circle cx="22" cy="22" r="14" fill="#e8d5f5"/>
+          <ellipse cx="16" cy="14" rx="5" ry="7" fill="#c49ae2" transform="rotate(-20 16 14)"/>
+          <ellipse cx="28" cy="14" rx="5" ry="7" fill="#c49ae2" transform="rotate(20 28 14)"/>
+          <circle cx="22" cy="22" r="9" fill="white" opacity="0.7"/>
+          <circle cx="19" cy="20" r="2" fill="#3d3d38"/>
+          <circle cx="25" cy="20" r="2" fill="#3d3d38"/>
+          <ellipse cx="22" cy="24" rx="3" ry="2" fill="#f9a0a0"/>
+        </svg>
+      </div>
+      <div class="pet-bubble">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="12" fill="#d5f5e8"/>
+          <ellipse cx="17" cy="20" rx="7" ry="5" fill="white" opacity="0.8"/>
+          <circle cx="14" cy="15" r="2" fill="#3d3d38"/>
+          <circle cx="20" cy="15" r="2" fill="#3d3d38"/>
+          <ellipse cx="17" cy="19" rx="2" ry="1.5" fill="#f9b0b0"/>
+        </svg>
+      </div>
+      <div class="pet-bubble">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <!-- bone -->
+          <rect x="12" y="18" width="16" height="4" rx="2" fill="#C9D85B"/>
+          <circle cx="11" cy="17" r="4" fill="#C9D85B"/>
+          <circle cx="11" cy="23" r="4" fill="#C9D85B"/>
+          <circle cx="29" cy="17" r="4" fill="#C9D85B"/>
+          <circle cx="29" cy="23" r="4" fill="#C9D85B"/>
+        </svg>
+      </div>
+      <div class="pet-bubble">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <!-- paw -->
+          <ellipse cx="16" cy="22" rx="8" ry="6" fill="#b8b4e8"/>
+          <ellipse cx="9" cy="14" rx="3.5" ry="4" fill="#b8b4e8"/>
+          <ellipse cx="16" cy="11" rx="3.5" ry="4.5" fill="#b8b4e8"/>
+          <ellipse cx="23" cy="14" rx="3.5" ry="4" fill="#b8b4e8"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ANIMALS ══════════════ -->
+<section class="section" id="animais">
+  <div class="section-header reveal">
+    <div class="section-tag">🐶 Prontos pra amar</div>
+    <h2>Animais para adoção</h2>
+    <p>Cada um tem uma história única. Talvez o seu próximo amigo esteja aqui.</p>
+  </div>
+
+  <div class="cards-grid" id="cardsAnimais">
+    <div class="animal-card reveal">
+      <div class="card-img card-img-1">
+        <span class="card-tag">Disponível</span>
+        <img src="assets/img/cachorro-caramelo_1749242700989.jpg" alt="Thor, cachorro caramelo para adoção" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-name">Thor</div>
+        <div class="card-details">
+          <span class="card-detail">🐾 3 anos</span>
+          <span class="card-detail">📍 São Paulo</span>
+          <span class="card-detail">♂ Macho</span>
+        </div>
+        <button class="card-action" type="button" data-pet="thor">Ver perfil completo &rarr;</button>
+      </div>
+    </div>
+
+    <div class="animal-card reveal reveal-delay-1">
+      <div class="card-img card-img-2">
+        <span class="card-tag">Disponível</span>
+        <img src="assets/img/1713448034_66212462f2476_hd.jpeg" alt="Luna, pet para adoção" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-name">Luna</div>
+        <div class="card-details">
+          <span class="card-detail">🐾 1 ano</span>
+          <span class="card-detail">📍 Campinas</span>
+          <span class="card-detail">♀ Fêmea</span>
+        </div>
+        <button class="card-action" type="button" data-pet="luna">Ver perfil completo &rarr;</button>
+      </div>
+    </div>
+
+    <div class="animal-card reveal reveal-delay-2">
+      <div class="card-img card-img-3">
+        <span class="card-tag">Disponível</span>
+        <img src="assets/img/b9ebd6fb44012b3d7f2d1a343479da74.jpg" alt="Mel, pet para adoção" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-name">Mel</div>
+        <div class="card-details">
+          <span class="card-detail">🐾 2 anos</span>
+          <span class="card-detail">📍 Rio de Janeiro</span>
+          <span class="card-detail">♀ Fêmea</span>
+        </div>
+        <button class="card-action" type="button" data-pet="mel">Ver perfil completo &rarr;</button>
+      </div>
+    </div>
+
+    <div class="animal-card reveal reveal-delay-3">
+      <div class="card-img card-img-4">
+        <span class="card-tag">Disponível</span>
+        <img src="assets/img/Fox-paulistinha.jpg" alt="Bolt, cachorro fox paulistinha para adoção" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-name">Bolt</div>
+        <div class="card-details">
+          <span class="card-detail">🐾 5 anos</span>
+          <span class="card-detail">📍 Curitiba</span>
+          <span class="card-detail">♂ Macho</span>
+        </div>
+        <button class="card-action" type="button" data-pet="bolt">Ver perfil completo &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HOW TO HELP ══════════════ -->
+<section class="help-section" id="ajudar">
+  <div class="help-inner">
+    <div class="section-tag reveal">💛 Faça parte</div>
+    <h2 class="reveal">Como você pode <br>ajudar hoje</h2>
+
+    <div class="help-cards">
+      <div class="help-card reveal" role="button" tabindex="0" data-help-action="animals">
+        <span class="help-num">01</span>
+        <div class="help-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 4C10 4 6 8.5 6 13.5C6 18 8 20 10 22L16 28L22 22C24 20 26 18 26 13.5C26 8.5 22 4 16 4Z" fill="#C9D85B" stroke="#C9D85B" stroke-width="0.5"/>
+            <path d="M12 14C12 12 14 10 16 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Adote</h3>
+        <p>Dê um lar para um animal que está esperando por você. O processo é simples, seguro e totalmente acompanhado pela nossa equipe.</p>
+        <button class="help-card-btn" type="button" onclick="document.getElementById('cardsAnimais').scrollIntoView({behavior:'smooth', block:'start'})">Conhecer animais <span>→</span></button>
+      </div>
+
+      <div class="help-card reveal reveal-delay-1" role="button" tabindex="0" data-help-action="donation">
+        <span class="help-num">02</span>
+        <div class="help-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="10" stroke="#C9D85B" stroke-width="2.5"/>
+            <path d="M16 10V22M10 16H22" stroke="#C9D85B" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Doe</h3>
+        <p>Sua contribuição alimenta, cura e cuida dos animais resgatados enquanto aguardam um lar. Cada centavo importa muito.</p>
+        <button class="help-card-btn" type="button" data-open-donation>Fazer doação <span>→</span></button>
+      </div>
+
+      <div class="help-card reveal reveal-delay-2" role="button" tabindex="0" data-help-action="volunteer">
+        <span class="help-num">03</span>
+        <div class="help-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="10" r="5" stroke="#C9D85B" stroke-width="2.5"/>
+            <path d="M8 26C8 21.5 11.5 18 16 18C20.5 18 24 21.5 24 26" stroke="#C9D85B" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M22 14L24 16L28 12" stroke="#C9D85B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3><button class="volunteer-title-button" type="button" data-open-volunteer>Voluntarie</button></h3>
+        <p>Tem tempo e amor para dar? Seja voluntário e ajude diretamente nos cuidados, transporte e acolhimento dos animais.</p>
+        <button class="help-card-btn" type="button" data-open-volunteer>Quero ajudar <span>→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SOBRE ══════════════ -->
+<section id="sobre" style="padding:80px 0; overflow:hidden;">
+  <div class="about-section">
+    <div class="about-visual reveal">
+      <div class="about-blob">
+        <svg viewBox="0 0 200 200" fill="none">
+          <!-- house/home for pets -->
+          <path d="M100 40L160 90V170H40V90L100 40Z" fill="white" opacity="0.8"/>
+          <rect x="80" y="120" width="40" height="50" rx="4" fill="#C9D85B"/>
+          <rect x="70" y="88" width="60" height="38" rx="4" fill="white" opacity="0.6"/>
+          <circle cx="80" cy="105" r="8" fill="white"/>
+          <circle cx="120" cy="105" r="8" fill="white"/>
+          <circle cx="80" cy="105" r="3" fill="#3d3d38"/>
+          <circle cx="120" cy="105" r="3" fill="#3d3d38"/>
+          <!-- paw on door -->
+          <ellipse cx="100" cy="138" rx="7" ry="5.5" fill="white" opacity="0.7"/>
+          <ellipse cx="93" cy="130" rx="3" ry="4" fill="white" opacity="0.7"/>
+          <ellipse cx="100" cy="128" rx="3.5" ry="4" fill="white" opacity="0.7"/>
+          <ellipse cx="107" cy="130" rx="3" ry="4" fill="white" opacity="0.7"/>
+          <!-- heart -->
+          <path d="M100 70 C100 70 88 62 88 55 C88 50 92 47 96 49 C98 50 100 52 100 52 C100 52 102 50 104 49 C108 47 112 50 112 55 C112 62 100 70 100 70Z" fill="#f9a0a0"/>
+        </svg>
+      </div>
+
+      <!-- Doodle decorations -->
+      <svg class="about-doodle" style="top:-20px;right:-20px;width:80px" viewBox="0 0 80 80" fill="none">
+        <path d="M20 20 Q40 5 60 20 Q75 40 60 60 Q40 75 20 60 Q5 40 20 20Z" stroke="#C9D85B" stroke-width="3" fill="none" stroke-dasharray="6 4"/>
+      </svg>
+      <svg class="about-doodle" style="bottom:-15px;left:-10px;width:60px" viewBox="0 0 60 60" fill="none">
+        <ellipse cx="30" cy="38" rx="14" ry="11" fill="#b8b4e8" opacity="0.5"/>
+        <ellipse cx="17" cy="24" rx="6" ry="8" fill="#b8b4e8" opacity="0.5"/>
+        <ellipse cx="30" cy="20" rx="7" ry="9" fill="#b8b4e8" opacity="0.5"/>
+        <ellipse cx="43" cy="24" rx="6" ry="8" fill="#b8b4e8" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <div class="about-text reveal reveal-delay-1">
+      <div class="section-tag">🌱 Nossa missão</div>
+      <h2>Cada animal merece uma segunda chance</h2>
+      <p>A Patinhas nasceu do amor genuíno pelos animais e da vontade de mudar a realidade de milhares de cães e gatos que vivem nas ruas ou em abrigos.</p>
+      <p>Trabalhamos com uma rede de voluntários, veterinários parceiros e famílias acolhedoras para garantir que cada animal resgatado seja cuidado, tratado e encontre um lar para chamar de seu.</p>
+      <p>Desde 2018, já facilitamos mais de 2.400 adoções — e cada uma delas é uma história de amor que nos faz querer continuar.</p>
+      <div class="about-badges">
+        <span class="badge">🏥 Saúde verificada</span>
+        <span class="badge">✅ Adoção acompanhada</span>
+        <span class="badge">🤝 Rede de voluntários</span>
+        <span class="badge">📍 Todo o Brasil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NEWSLETTER ══════════════ -->
+<div class="newsletter" id="contato">
+  <div class="newsletter-inner">
+    <h3>Receba histórias de adoção que vão te encantar 🐾</h3>
+    <div class="newsletter-form">
+      <input type="email" placeholder="seu@email.com">
+      <button>Me inscrever</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C9 3 6 5 6 8.5C6 10 6.5 11 7 12L12 20L17 12C17.5 11 18 10 18 8.5C18 5 15 3 12 3Z" fill="#C9D85B"/>
+          </svg>
+          patinhas
+        </a>
+        <p>Conectando animais resgatados a lares cheios de amor desde 2018.</p>
+        <div class="footer-socials">
+          <div class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,0.6)" stroke="none"/>
+            </svg>
+          </div>
+          <div class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </div>
+          <div class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#">Home</a>
+        <a href="#animais">Animais</a>
+        <a href="#ajudar">Como ajudar</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <a href="#">Adoção</a>
+        <a href="#">Doação</a>
+        <a href="#">Voluntariado</a>
+        <a href="#">Cadastrar animal</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="#">contato@patinhas.org</a>
+        <a href="#">(11) 9 8765-4321</a>
+        <a href="#">São Paulo, SP</a>
+        <a href="#">Seg–Sex, 9h–18h</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Patinhas. Feito com 🐾 e muito amor.</p>
+      <div class="footer-paws">
+        <svg width="20" height="20" viewBox="0 0 40 40" fill="none">
+          <ellipse cx="20" cy="26" rx="9" ry="7" fill="white"/>
+          <ellipse cx="11" cy="17" rx="4" ry="5" fill="white"/>
+          <ellipse cx="20" cy="14" rx="4.5" ry="5.5" fill="white"/>
+          <ellipse cx="29" cy="17" rx="4" ry="5" fill="white"/>
+        </svg>
+        <svg width="16" height="16" viewBox="0 0 40 40" fill="none">
+          <ellipse cx="20" cy="26" rx="9" ry="7" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="11" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="20" cy="14" rx="4.5" ry="5.5" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="29" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.5)"/>
+        </svg>
+        <svg width="12" height="12" viewBox="0 0 40 40" fill="none">
+          <ellipse cx="20" cy="26" rx="9" ry="7" fill="rgba(255,255,255,0.25)"/>
+          <ellipse cx="11" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.25)"/>
+          <ellipse cx="20" cy="14" rx="4.5" ry="5.5" fill="rgba(255,255,255,0.25)"/>
+          <ellipse cx="29" cy="17" rx="4" ry="5" fill="rgba(255,255,255,0.25)"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="pet-modal" id="petModal" aria-hidden="true">
+  <div class="pet-modal-backdrop" data-close-modal></div>
+  <article class="pet-modal-card" role="dialog" aria-modal="true" aria-labelledby="petModalTitle">
+    <button class="pet-modal-close" type="button" aria-label="Fechar perfil" data-close-modal>&times;</button>
+
+    <div class="pet-modal-hero" id="petModalVisual"></div>
+
+    <div class="pet-modal-body">
+      <span class="pet-modal-tag" id="petModalStatus">Dispon&iacute;vel</span>
+      <h2 id="petModalTitle">Nome do pet</h2>
+      <p class="pet-modal-subtitle" id="petModalSubtitle">Resumo do pet</p>
+
+      <div class="pet-modal-grid">
+        <div>
+          <strong>Idade</strong>
+          <span id="petModalAge">-</span>
+        </div>
+        <div>
+          <strong>Sexo</strong>
+          <span id="petModalGender">-</span>
+        </div>
+        <div>
+          <strong>Localiza&ccedil;&atilde;o</strong>
+          <span id="petModalLocation">-</span>
+        </div>
+        <div>
+          <strong>Porte</strong>
+          <span id="petModalSize">-</span>
+        </div>
+      </div>
+
+      <section class="pet-modal-section">
+        <h3>Hist&oacute;ria de resgate</h3>
+        <p id="petModalStory"></p>
+      </section>
+
+      <section class="pet-modal-section">
+        <h3>Situa&ccedil;&atilde;o atual</h3>
+        <p id="petModalCurrent"></p>
+      </section>
+
+      <section class="pet-modal-section">
+        <h3>Necessidades</h3>
+        <ul id="petModalNeeds"></ul>
+      </section>
+
+      <div class="pet-modal-actions">
+        <button class="btn-primary modal-primary-action" type="button" id="openInterestModal">Tenho interesse</button>
+        <button class="btn-secondary" type="button" data-close-modal>Fechar</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="interest-modal" id="interestModal" aria-hidden="true">
+  <div class="interest-modal-backdrop" data-close-interest></div>
+  <article class="interest-modal-card" role="dialog" aria-modal="true" aria-labelledby="interestModalTitle">
+    <button class="pet-modal-close" type="button" aria-label="Fechar formulario" data-close-interest>&times;</button>
+
+    <div class="interest-modal-body">
+      <span class="pet-modal-tag">Quase l&aacute;</span>
+      <h2 id="interestModalTitle">Dados para ado&ccedil;&atilde;o</h2>
+      <p class="pet-modal-subtitle" id="interestModalSubtitle">
+        Preencha seus dados para que a equipe entre em contato e siga com a triagem.
+      </p>
+
+      <form class="interest-form" id="interestForm">
+        <input type="hidden" id="interestPet" name="pet">
+
+        <label>
+          Nome completo
+          <input type="text" name="name" placeholder="Seu nome" required>
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="seu@email.com" required>
+        </label>
+
+        <label>
+          WhatsApp
+          <input type="tel" name="phone" placeholder="(00) 00000-0000" required>
+        </label>
+
+        <label>
+          Cidade e estado
+          <input type="text" name="city" placeholder="Ex: S&atilde;o Paulo, SP" required>
+        </label>
+
+        <label>
+          Tipo de moradia
+          <select name="home" required>
+            <option value="">Selecione</option>
+            <option>Casa</option>
+            <option>Apartamento</option>
+            <option>Outro</option>
+          </select>
+        </label>
+
+        <label>
+          J&aacute; tem outros animais?
+          <select name="otherPets" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>N&atilde;o</option>
+          </select>
+        </label>
+
+        <label class="interest-form-full">
+          Conte um pouco sobre sua rotina
+          <textarea name="routine" rows="4" placeholder="Hor&aacute;rios, espa&ccedil;o dispon&iacute;vel, experi&ecirc;ncia com pets..."></textarea>
+        </label>
+
+        <div class="interest-form-actions">
+          <button class="btn-primary modal-primary-action" type="submit">Enviar interesse</button>
+          <button class="btn-secondary" type="button" data-close-interest>Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+
+<div class="interest-modal donation-modal" id="donationModal" aria-hidden="true">
+  <div class="interest-modal-backdrop" data-close-donation></div>
+  <article class="interest-modal-card" role="dialog" aria-modal="true" aria-labelledby="donationModalTitle">
+    <button class="pet-modal-close" type="button" aria-label="Fechar informa&ccedil;&otilde;es do PIX" data-close-donation>&times;</button>
+
+    <div class="interest-modal-body">
+      <span class="pet-modal-tag">PIX solid&aacute;rio</span>
+      <h2 id="donationModalTitle">Sua ajuda vira cuidado</h2>
+      <p class="pet-modal-subtitle">
+        Este &eacute; um PIX fict&iacute;cio para apresenta&ccedil;&atilde;o do MVP. Em uma vers&atilde;o real, a doa&ccedil;&atilde;o seria validada por uma institui&ccedil;&atilde;o parceira.
+      </p>
+
+      <div class="pix-box">
+        <span>Chave PIX fict&iacute;cia</span>
+        <strong id="pixKey">doacoes@patinhas.org</strong>
+        <button class="btn-primary modal-primary-action" type="button" id="copyPixKey">Copiar chave PIX</button>
+      </div>
+
+      <div class="pix-info-grid">
+        <div>
+          <strong>Para onde vai?</strong>
+          <p>Rações, medicamentos, vacinas, castra&ccedil;&otilde;es e transporte seguro dos animais resgatados.</p>
+        </div>
+        <div>
+          <strong>Transpar&ecirc;ncia</strong>
+          <p>O MVP simula um fluxo em que cada doa&ccedil;&atilde;o seria vinculada a relat&oacute;rios de cuidado e presta&ccedil;&atilde;o de contas.</p>
+        </div>
+      </div>
+
+      <div class="pix-thanks">
+        <strong>Obrigado por fazer parte dessa corrente.</strong>
+        <p>Cada contribui&ccedil;&atilde;o ajuda um pet a chegar mais perto de um lar seguro e cheio de afeto.</p>
+      </div>
+
+      <div class="interest-form-actions">
+        <button class="btn-secondary" type="button" data-close-donation>Fechar</button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="interest-modal volunteer-modal" id="volunteerModal" aria-hidden="true">
+  <div class="interest-modal-backdrop" data-close-volunteer></div>
+  <article class="interest-modal-card" role="dialog" aria-modal="true" aria-labelledby="volunteerModalTitle">
+    <button class="pet-modal-close" type="button" aria-label="Fechar formulario" data-close-volunteer>&times;</button>
+
+    <div class="interest-modal-body">
+      <span class="pet-modal-tag">Voluntariado</span>
+      <h2 id="volunteerModalTitle">Quero ajudar a Patinhas</h2>
+      <p class="pet-modal-subtitle">
+        Conte como voc&ecirc; pode contribuir. A equipe simula o contato para combinar a melhor forma de apoio.
+      </p>
+
+      <form class="interest-form" id="volunteerForm">
+        <label>
+          Nome completo
+          <input type="text" name="name" placeholder="Seu nome" required>
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="seu@email.com" required>
+        </label>
+
+        <label>
+          WhatsApp
+          <input type="tel" name="phone" placeholder="(00) 00000-0000" required>
+        </label>
+
+        <label>
+          Cidade e estado
+          <input type="text" name="city" placeholder="Ex: S&atilde;o Paulo, SP" required>
+        </label>
+
+        <label>
+          Como quer ajudar?
+          <select name="helpType" required>
+            <option value="">Selecione</option>
+            <option>Transporte de animais</option>
+            <option>Lar tempor&aacute;rio</option>
+            <option>Feiras de ado&ccedil;&atilde;o</option>
+            <option>Divulga&ccedil;&atilde;o nas redes</option>
+            <option>Apoio administrativo</option>
+          </select>
+        </label>
+
+        <label>
+          Disponibilidade
+          <select name="availability" required>
+            <option value="">Selecione</option>
+            <option>Durante a semana</option>
+            <option>Finais de semana</option>
+            <option>Algumas horas por m&ecirc;s</option>
+            <option>Posso ajudar sob demanda</option>
+          </select>
+        </label>
+
+        <label class="interest-form-full">
+          Experi&ecirc;ncia e observa&ccedil;&otilde;es
+          <textarea name="message" rows="4" placeholder="Conte se voc&ecirc; j&aacute; teve contato com resgates, pets, transporte ou eventos..."></textarea>
+        </label>
+
+        <div class="interest-form-actions">
+          <button class="btn-primary modal-primary-action" type="submit">Enviar cadastro</button>
+          <button class="btn-secondary" type="button" data-close-volunteer>Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
